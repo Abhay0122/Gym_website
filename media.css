@@ -2,6 +2,11 @@
     #nav_bars{        
      display: none;
     }
+
+    .pre_loader {
+        width: inherit;
+    }
+
     #hemburger_menu{
         display: initial;
         margin-right: 18px;
