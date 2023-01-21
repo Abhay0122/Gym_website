@@ -40,7 +40,7 @@
     }
 
     .search_button{
-        margin-top: 1vmax;
+        margin-top: 4vmax;
     }
 
     #search_button{
@@ -80,29 +80,20 @@
         width: 6vmax;
     }
 
-    .slide_1 h1{
-        /* background-color: red; */
-        font: 300 7vmax "Agencyfb";
-        top: 40%;
-        left: 10%;
+    /* swiper */
+
+    .swiper-slide h1{
+        width: 70%;
+        margin-top: 2vmax;
+        font-size: 5vmax;
+        margin-bottom: 2vmax;
     }
-    .slide_1 button{
-        font: 300 3.3vmax "Agencyfb";
-        top: 75%;
-        left: 12%;
+
+    #slide-1-Btn{
+        padding:1.8vh 5vw;
+        font-size: 2vmax;
     }
-    .slide_2 h1{
-        /* background-color: red; */
-        font: 300 6.3vmax "Agencyfb";
-        top: 40%;
-        left: 0%;
-    }
-    .slide_3 h1{
-        /* background-color: red; */
-        font: 300 6.5vmax "Agencyfb";
-        top: 40%;
-        left: 0%;
-    }
+  
     
     #page_two_heading h1{
         font: 400 5vmax "pacifico";

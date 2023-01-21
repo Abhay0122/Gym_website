@@ -1,3 +1,24 @@
+// swiper js
+
+// <!-- Initialize Swiper -->
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
 // loader:::
 
 var preloader = document.querySelector(".pre_loader");
@@ -5,28 +26,6 @@ var preloader = document.querySelector(".pre_loader");
 setTimeout(function webloader() {
     preloader.style.display = 'none';
 }, 4000)
-
-
-
-///::::::----left-right-scrolling_coading_start:::::::----
-const slide_end = document.querySelector(".slide_3");
-const scrollElementRight = document.querySelector(".scroll_element_right");
-
-const scrollRight = () => {
-    slide_end.scrollIntoView({ behavior: "smooth"});
-};
-
-scrollElementRight.addEventListener("click", scrollRight)
-
-
-const slide_start = document.querySelector(".slide_1");
-const scrollElementleft = document.querySelector(".scroll_element_left");
-
-const scrollLeft = () => {
-    slide_start.scrollIntoView({ behavior: "smooth"});
-};
-
-scrollElementleft.addEventListener("click", scrollLeft)
 
 ///::::::----scrolltotop_coading_start:::::::----
 
@@ -88,4 +87,5 @@ document.addEventListener("mousemove", function(move){
     cursor.style.left = x + "px";
     cursor.style.top = y + "px";
 });
+
 

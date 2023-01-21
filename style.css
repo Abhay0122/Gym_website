@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html,
-body{
+body {
     height: 100%;
     width: 100%;
     cursor: none;
@@ -13,7 +13,7 @@ body{
 
 /* pre_loader */
 
-.pre_loader{
+.pre_loader {
     height: 100vh;
     width: 100vw;
     background-color: white;
@@ -24,46 +24,49 @@ body{
     align-items: center;
 }
 
-.loader{
+.loader {
     height: 20vmax;
     width: 20vmax;
-    background-image: url(DxrL.gif);
+    background-image: url(/images/DxrL.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     transform-origin: top;
 }
 
-#cursor{
+#cursor {
     z-index: 9999999;
     position: fixed;
     width: 1.7vmax;
     height: 1.7vmax;
     border-radius: 50%;
     background-color: rgba(178, 34, 34, 0.559);
-    box-shadow: 0 0 20px rgb(240, 219, 219),0 0 21px firebrick;
+    box-shadow: 0 0 20px rgb(240, 219, 219), 0 0 21px firebrick;
     transition: 0.3s linear transform;
     pointer-events: none;
 }
 
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 10px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: black;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: firebrick;
     border-radius: 25px;
 }
 
-#main{
+#main {
     width: 100%;
     min-height: 100vh;
     background-color: rgb(12, 12, 12);
 }
 
-.menu_overlay{
+.menu_overlay {
     position: relative;
     min-height: 100vh;
     width: 30%;
@@ -78,37 +81,43 @@ body{
     transform: translateX(100%);
     transition: 1s ease-in-out all;
 }
-.menu_overlay ul{
+
+.menu_overlay ul {
     min-height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
 }
-.menu_overlay ul li{
+
+.menu_overlay ul li {
     font-size: 1.5vmax;
 }
-.menu_overlay ul li:hover{
+
+.menu_overlay ul li:hover {
     transform: translateX(5%);
 }
-#cross{
+
+#cross {
     position: absolute;
     top: 5%;
     right: 5%;
 }
-#cross i{
+
+#cross i {
     font-size: 2vmax;
     color: white;
     cursor: pointer;
 }
-#cross:active{
+
+#cross:active {
     transform: scale(0.9);
 }
 
 
-#header{
+#header {
     width: 100%;
-    min-height: 15vh;
+    min-height: 12vh;
     background-color: rgba(0, 0, 0, 0.76);
     display: flex;
     justify-content: space-between;
@@ -117,19 +126,19 @@ body{
     z-index: 2222;
 }
 
-#logo{
-    padding:0 1vw;
+#logo {
+    padding: 0 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#logo img{
+#logo img {
     width: 80px;
     filter: invert(100%);
 }
 
-#logo h5{
+#logo h5 {
     letter-spacing: 1px;
     color: firebrick;
     text-align: center;
@@ -137,7 +146,7 @@ body{
     margin-top: -1.1vmax;
 }
 
-#nav_bars ul{
+#nav_bars ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,62 +155,70 @@ body{
     /* background-color: rebeccapurple; */
     margin-left: 14vmax;
 }
-.list{
+
+.list {
     padding: 0 1vw;
     color: white;
     letter-spacing: 1px;
     font: 300 1.2vmax "pacifico";
     cursor: pointer;
 }
-.list:active{
+
+.list:active {
     transform: scale(0.9);
 }
-.list:hover{
+
+.list:hover {
     color: #dadada;
     text-decoration: underline;
     text-decoration-color: firebrick;
     text-decoration-thickness: 0.3vmax;
 }
-#navbars_icons{
+
+#navbars_icons {
     display: flex;
     align-items: center;
     overflow: hidden;
 }
 
-#hemburger_menu{
+#hemburger_menu {
     display: none;
 }
-#hemburger_menu i{
+
+#hemburger_menu i {
     color: white;
     font-size: 2vmax;
     cursor: pointer;
 }
-#hemburger_menu:active{
+
+#hemburger_menu:active {
     transform: scale(0.9);
 }
 
-#search_wrapper{
+#search_wrapper {
     display: flex;
     align-items: center;
 }
 
-#search_button{
+#search_button {
     margin-right: 2vmax;
     width: 25px;
     filter: invert(100%);
     cursor: pointer;
 }
-#search_button:active{
+
+#search_button:active {
     transform: scale(0.9);
 }
 
-.search_bar{
+.search_bar {
     margin-right: 0.5vw;
     transform: translateX(140%);
     /* display: none; */
     transition: 0.5s ease-in-out all;
 }
-.search_box{
+
+.search_box {
     border: none;
     outline: none;
     background-color: #fff;
@@ -209,7 +226,8 @@ body{
     padding: 0.7vh 1vw;
     border-radius: 5px;
 }
-.search_button{
+
+.search_button {
     padding: 0.7vh 1vw;
     border-radius: 5px;
     background-color: firebrick;
@@ -217,173 +235,99 @@ body{
     color: white;
     cursor: pointer;
 }
-.search_button:active{
+
+.search_button:active {
     transform: scale(0.9);
 }
 
 /*  */
 
-.scroll{
+.scroll {
     height: 100%;
     width: 100%;
-    /* background-color: red; */
-    display: inline-block;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-.scroll::-webkit-scrollbar{
-    display: none;
+    background-color: black;
 }
 
-.slide_1{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
-    background-position: 40% 65%;
+.slide-1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(/images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
 }
-.slide_1 h1{
-    width: auto;
-    min-height: max-content;
-    padding: 0 4vw;
-    /* background-color: red; */
-    /* overflow: hidden; */
+
+.swiper-slide {
+    min-height: 100vh;
+    width: 80vw;
+    padding: 5vw;
+}
+
+.swiper-slide h1 {
     letter-spacing: 1px;
     color: white;
-    text-align: justify;
+    width: 50%;
     font: 300 5vmax "Agencyfb";
-    position: absolute;
-    top: 30%;
-    left: 6%;
+    margin-top: 5vmax;
 }
-.slide_1 button{
+
+#slide-1-Btn {
     padding: 1.8vh 2.5vw;
     border: none;
     border-radius: 10px;
     background-color: firebrick;
     font: 300 1.8vmax "Agencyfb";
     color: white;
-    position: absolute;
-    top: 80%;
-    left: 10%;
     cursor: pointer;
-}
-.slide_1 button:active{
-    transform: scale(0.9);
+    margin: 2.5vmax 0;
 }
 
-.slide_1 button:hover{
+.slide-2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slide-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* pagination */
+
+:root {
+    --swiper-theme-color: firebrick;
+}
+
+.swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    margin: 0.5vmax !important;
     background-color: #dadada;
-    color: firebrick;
 }
 
-.slide_2{
-    width: 100%;
-    min-height: 100vh;
-    /* background-color: red; */
-    background-image: url(raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
-    background-position: 40% 65%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-}
-.slide_2 h1{
-    width: auto;
-    /* background-color: red; */
-    padding: 0 4vw;
-    letter-spacing: 1px;
-    color: white;
-    font: 300 6vmax "Agencyfb";
-    position: absolute;
-    top: 19%;
-    left: 10%;
-}
+/* main-2 */
 
-.slide_3{
-    width: 100%;
-    min-height: 100vh;
-    /* background-color: red; */
-    background-image: url(sven-mieke-MsCgmHuirDo-unsplash.jpg);
-    background-position: 40% 65%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: inline-block;
-    position: relative;
-}
-.slide_3 h1{
-    width: auto;
-    min-height: max-content;
-    padding: 0 4vw;
-    /* background-color: red; */
-    letter-spacing: 1px;
-    color: white;
-    font: 300 6vmax "Agencyfb";
-    position: absolute;
-    top: 19%;
-    left: 10%;
-}
-
-.scroll_element_left{
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    z-index: 244;
-    height: 3.5vmax;
-    width: 3.5vmax;
-    background-color: rgba(178, 34, 34, 0.529);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-.scroll_element_left span{
-    color:black;
-    font-size: 1.8rem;
-}
-
-.scroll_element_right{
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    z-index: 244;
-    height: 3.5vmax;
-    width: 3.5vmax;
-    background-color:rgba(178, 34, 34, 0.529);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.scroll_element_right span{
-    color: black;
-    font-size: 1.8rem;
-}
-
-.main::-webkit-scrollbar{
-    display: none;
-}
-.scroll_element_right:active{
-    transform: scale(0.9);
-}
-.scroll_element_left:active{
-    transform: scale(0.9);
-}
-
-
-#main_2{
+#main_2 {
     min-height: 150vh;
     width: 100%;
 }
 
-#page_two_heading{
+#page_two_heading {
     min-height: 15vh;
     width: 100%;
     /* background-color: red; */
@@ -392,7 +336,7 @@ body{
     padding: 0 2vw;
 }
 
-#page_two_heading h1{
+#page_two_heading h1 {
     letter-spacing: 1px;
     color: firebrick;
     font: 400 3vmax "pacifico";
@@ -400,14 +344,13 @@ body{
     /* margin-top: -1.1vmax; */
 }
 
-#page_two_content
-{
+#page_two_content {
     min-height: 135vh;
     width: 100%;
     display: flex;
 }
 
-#page_two_left{
+#page_two_left {
     min-height: inherit;
     width: 50%;
     /* background-color: blue; */
@@ -418,7 +361,7 @@ body{
     justify-content: space-evenly;
 }
 
-#page_two_right{
+#page_two_right {
     min-height: inherit;
     width: 50%;
     /* background-color: yellow; */
@@ -429,7 +372,7 @@ body{
     justify-content: space-evenly;
 }
 
-#gym_trainer_profile_photo{
+#gym_trainer_profile_photo {
     height: 15vmax;
     width: 15vmax;
     /* background-color: red; */
@@ -439,55 +382,59 @@ body{
     background-size: cover;
 }
 
-#page_two_left h1{
+#page_two_left h1 {
     color: black;
     font: 700 2vmax "montserrat";
 }
-#page_two_left h5{
+
+#page_two_left h5 {
     color: black;
     font: 500 1.4vmax "montserrat";
 }
-#page_two_left p{
+
+#page_two_left p {
     color: black;
     margin-bottom: 4vmax;
     font: 500 1.2vmax "gilroy";
 }
 
-#page_two_left p span{
+#page_two_left p span {
     color: firebrick;
     font-weight: 600;
 }
 
-#yoga_trainer_profile_photo{
+#yoga_trainer_profile_photo {
     height: 15vmax;
     width: 15vmax;
     /* background-color: red; */
     border-radius: 50%;
-    background-image: url(tim-chow-pa_McjjynOA-unsplash.jpg);
+    background-image: url(/images/tim-chow-pa_McjjynOA-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#page_two_right h1{
+#page_two_right h1 {
     color: black;
     font: 700 2vmax "montserrat";
 }
-#page_two_right h5{
+
+#page_two_right h5 {
     color: black;
     font: 500 1.4vmax "montserrat";
 }
-#page_two_right p{
+
+#page_two_right p {
     color: black;
     font: 500 1.2vmax "gilroy";
 }
 
-#main_3{
+#main_3 {
     min-height: 100vh;
     width: 100%;
     /* background-color: pink; */
 }
 
-#main3_head{
+#main3_head {
     min-height: 15vh;
     width: 100%;
     /* background-color: rgb(245, 137, 137); */
@@ -495,21 +442,22 @@ body{
     align-items: center;
     padding: 0 2vw;
 }
-#main3_head h1{
+
+#main3_head h1 {
     letter-spacing: 1px;
     color: firebrick;
     font: 400 3vmax "pacifico";
     border-bottom: 4px solid black;
 }
 
-#main3_content{
+#main3_content {
     min-height: 85vh;
     width: 100%;
     /* background-color: red; */
     display: flex;
 }
 
-#main3_left{
+#main3_left {
     min-height: inherit;
     width: 50%;
     /* background-color: blue; */
@@ -519,7 +467,7 @@ body{
     flex-direction: column;
 }
 
-#main3_right{
+#main3_right {
     min-height: inherit;
     width: 50%;
     /* background-color: yellow; */
@@ -529,7 +477,7 @@ body{
     padding: 0 2vw;
 }
 
-#main3_left_img{
+#main3_left_img {
     min-height: 50vh;
     width: 70%;
     background-color: firebrick;
@@ -540,13 +488,7 @@ body{
     overflow: hidden;
 }
 
-/* #main3_left_img:hover{
-    transform: scale(1.1);
-} */
-
-
-
-#main3_left button{
+#main3_left button {
     padding: 1.8vh 2.5vw;
     border: none;
     border-radius: 10px;
@@ -555,22 +497,23 @@ body{
     color: white;
     cursor: pointer;
 }
-#main3_left button:active{
+
+#main3_left button:active {
     transform: scale(0.9);
 }
 
-#main3_right p{
+#main3_right p {
     font: 300 1.8vmax "Agencyfb";
     color: rgb(31, 30, 30);
 }
 
-#main_4{
+#main_4 {
     min-height: 250vh;
     width: 100%;
     background-color: pink;
 }
 
-#main4_heading{
+#main4_heading {
     min-height: 12vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -578,33 +521,35 @@ body{
     display: flex;
     align-items: center;
 }
-#main4_heading h1{
+
+#main4_heading h1 {
     letter-spacing: 1px;
     color: firebrick;
     font: 400 4vmax "pacifico";
-    text-decoration:underline;
+    text-decoration: underline;
     text-decoration-color: white;
     text-decoration-thickness: 0.2vmax;
 }
-#main4_content{
-    min-height:inherit;
+
+#main4_content {
+    min-height: inherit;
     width: 100%;
     /* background-color: red; */
     display: flex;
 }
 
-.main4_content_left{
+.main4_content_left {
     min-height: inherit;
     width: 50%;
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 2vh 4vw;
 }
 
-.main4_content_left .left_boxes{
+.main4_content_left .left_boxes {
     width: 40vmax;
     height: 25vmax;
     /* border: 1px solid black; */
@@ -614,56 +559,62 @@ body{
     flex-direction: column;
     overflow: hidden;
 }
-.images_same_property{
+
+.images_same_property {
     width: 100%;
     height: 80%;
     background-color: red;
     transition: 0.5s ease-in-out all;
     cursor: pointer;
 }
-.images_same_property:hover{
+
+.images_same_property:hover {
     transform: scale(1.1);
 }
 
-.left_box1_image{
-    background-image: url(Callanetics.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.left_box2_image{
-    background-image: url(Sport\ Dances.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.left_box3_image{
-    background-image: url(Cardio\ Boxing.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.left_box4_image{
-    background-image: url(Press\ &\ Back.jpg);
+.left_box1_image {
+    background-image: url(/images/Callanetics.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#main4_content h5{
+.left_box2_image {
+    background-image: url(/images/Sport\ Dances.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left_box3_image {
+    background-image: url(/images/Cardio\ Boxing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left_box4_image {
+    background-image: url(/images/Press\ &\ Back.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#main4_content h5 {
     font: 300 2.5vmax "Agencyfb";
     color: white;
     text-decoration: underline;
     text-decoration-color: white;
 }
 
-.main4_content_right{
+.main4_content_right {
     min-height: inherit;
     width: 50%;
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 2vh 4vw;
 }
-.main4_content_right .right_boxes{
+
+.main4_content_right .right_boxes {
     width: 40vmax;
     height: 25vmax;
     /* border: 1px solid black; */
@@ -674,32 +625,35 @@ body{
     overflow: hidden;
 }
 
-.right_box1_image{
-    background-image: url(yoga.jpg);
+.right_box1_image {
+    background-image: url(/images/yoga.jpg);
     background-position: center;
     background-size: cover;
     transition: 0.5s ease-in-out all;
     cursor: pointer;
 }
-.right_box2_image{
-    background-image: url(Lifting.jpg);
+
+.right_box2_image {
+    background-image: url(/images/Lifting.jpg);
     background-position: center;
     background-size: cover;
 }
-.right_box3_image{
-    background-image: url(Cardio.jpg);
+
+.right_box3_image {
+    background-image: url(/images/Cardio.jpg);
     background-position: center;
     background-size: cover;
 }
-.right_box4_image{
-    background-image: url(Body\ Building.jpg);
+
+.right_box4_image {
+    background-image: url(/images/Body\ Building.jpg);
     background-position: center;
     background-size: cover;
 }
 
 
 
-footer{
+footer {
     min-height: 70vh;
     width: 100%;
     /* background-color: blue; */
@@ -707,7 +661,7 @@ footer{
     position: relative;
 }
 
-#footer_left{
+#footer_left {
     min-height: inherit;
     width: 50%;
     background-color: #fff;
@@ -718,7 +672,7 @@ footer{
     padding: 0 4vw;
 }
 
-#footer_left_center_content_wrapper{
+#footer_left_center_content_wrapper {
     width: 100%;
     min-height: 35vh;
     display: flex;
@@ -726,25 +680,28 @@ footer{
     flex-direction: column;
 }
 
-#footer_left_center_content_wrapper h1{
+#footer_left_center_content_wrapper h1 {
     font: 300 3vmax "Agencyfb";
     color: #000;
 }
-#footer_left_center_content_wrapper p{
+
+#footer_left_center_content_wrapper p {
     font: 500 1.5vmax "montserrat";
     color: #000;
 }
-#footer_left_icons{
+
+#footer_left_icons {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
-#footer_left_icons i{
+
+#footer_left_icons i {
     font-size: 2vmax;
     cursor: pointer;
 }
 
-#footer_right{
+#footer_right {
     min-height: inherit;
     width: 50%;
     /* background-color: brown; */
@@ -754,7 +711,8 @@ footer{
     align-items: flex-start;
     padding: 0 4vw;
 }
-#footer_right_center_content_wrapper{
+
+#footer_right_center_content_wrapper {
     width: 100%;
     min-height: 35vh;
     display: flex;
@@ -763,18 +721,19 @@ footer{
     flex-direction: column;
 }
 
-#footer_right_center_content_wrapper h1{
+#footer_right_center_content_wrapper h1 {
     font: 300 3vmax "Agencyfb";
     color: #000;
 }
-#footer_right_center_content_wrapper p{
+
+#footer_right_center_content_wrapper p {
     font: 500 1.5vmax "montserrat";
     color: #000;
     margin-bottom: 12vh;
 }
 
 
-.scrollToTop{
+.scrollToTop {
     width: 5vmax;
     height: 5vmax;
     background-color: black;
@@ -788,9 +747,7 @@ footer{
     cursor: pointer;
 }
 
-.scrollToTop span{
+.scrollToTop span {
     color: white;
     font-size: 3vmax;
 }
-
-

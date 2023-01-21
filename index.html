@@ -6,18 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>My fitness club</title>
-    <link rel="shortcut icon" href="icons8-gym-64.png" type="image/png">
+    <link rel="shortcut icon" href="/images/icons8-gym-64.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!--  -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 </head>
 
 <body onload="webloader()">
+    <!--  -->
     <div class="pre_loader">
         <div class="loader"></div>
     </div>
     <!--  -->
     <div id="cursor"></div>
+    <!--  -->
+    <!-- main-1 -->
     <div id="main">
         <div class="menu_overlay">
             <div id="cross">
@@ -33,15 +39,10 @@
                 <li class="list_7 list">Contact</li>
             </ul>
         </div>
-        <div class="scroll_element_left">
-            <span>⬅</span>
-        </div>
-        <div class="scroll_element_right">
-            <span>➞</span>
-        </div>
+        <!--  -->
         <nav id="header">
             <div id="logo">
-                <img src="icons8-gym-66.png" alt="">
+                <img src="/images/icons8-gym-66.png" alt="">
                 <h5>My fitness club</h5>
             </div>
             <div id="nav_bars">
@@ -61,7 +62,7 @@
                         <input type="text" placeholder="Type Something..." class="search_box">
                         <button class="search_button">Search</button>
                     </div>
-                    <img id="search_button" src="icons8-search-30.png" alt="">
+                    <img id="search_button" src="/images/icons8-search-30.png" alt="">
                 </div>
             </div>
             <div id="hemburger_menu">
@@ -69,33 +70,42 @@
             </div>
 
         </nav>
+        <!--  -->
         <div class="scroll">
-            <div class="slide_1">
-                <h1>Your <span>body</span> can do it. <br>
-                    it's time to convince <br>
-                    your <span>mind.</span>
-                </h1>
-                <button>Let's get started</button>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper slide_container">
+                    <div class="swiper-slide slide-1">
+                        <h1>
+                            Your body can do it.
+                            it's time to convince
+                            your mind.
+                        </h1>
+                        <button id="slide-1-Btn">Let's get started</button>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <h1>Each new day is new day
+                            opportunity to improve
+                            yourself. Take it. And make
+                            the most of it.</h1>
+                    </div>
+                    <div class="swiper-slide slide-3">
+                        <h1>I hate every minute of
+                            my training. but I said.
+                            don't quit. Suffer now and
+                            live the rest of your life
+                            as a champion.</h1>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
-            <div class="slide_2">
-                <h1>Each new day is new day <br>
-                    opportunity to improve <br>
-                    yourself. <span>Take it.</span> And make<br>
-                    the most of it.
-                </h1>
-            </div>
-            <div class="slide_3">
-                <h1>
-                    <span>I hate</span> every minute of <br>
-                    my training. but I said. <br>
-                    <span>don't quit.</span> Suffer now and <br>
-                    <span>live the rest</span> of your life <br>
-                    <span>as a champion</span>.
-                </h1>
-            </div>
+            <!--  -->
         </div>
+        <!--  -->
     </div>
-
+    <!-- main-2 -->
     <div id="main_2">
         <header id="page_two_heading">
             <h1>About Trainers</h1>
@@ -141,7 +151,7 @@
             </div>
         </section>
     </div>
-
+    <!-- main-3 -->
     <div id="main_3">
         <header id="main3_head">
             <h1>About My Fitness club</h1>
@@ -166,7 +176,7 @@
             </div>
         </section>
     </div>
-
+    <!-- main-4 -->
     <div id="main_4">
         <header id="main4_heading">
             <h1>Classes</h1>
@@ -210,7 +220,7 @@
             </div>
         </section>
     </div>
-
+    <!-- main-5 -->
     <footer>
         <div id="footer_left">
             <section id="footer_left_center_content_wrapper">
@@ -232,11 +242,18 @@
             </section>
         </div>
     </footer>
-
+    <!--  -->
     <div class="scrollToTop">
         <span>⇑</span>
     </div>
 
+
+
+
+    <!--  -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!--  -->
     <script src="script.js"></script>
 </body>
 
