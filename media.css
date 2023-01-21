@@ -13,6 +13,10 @@
         width: 110vw;
     }
 
+    #cursor{
+        display: none;
+    }
+
     #header{
         padding: 0 5vw;
         /* position: relative; */
