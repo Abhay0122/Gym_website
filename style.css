@@ -27,7 +27,7 @@ body {
 .loader {
     height: 20vmax;
     width: 20vmax;
-    background-image: url(/images/DxrL.gif);
+    background-image: url(DxrL.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -253,7 +253,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    background-image: url(/images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
+    background-image: url(anastase-maragos-9dzWZQWZMdE-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -289,7 +289,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    background-image: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+    background-image: url(raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -300,7 +300,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    background-image: url(/images/raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
+    background-image: url(raimond-klavins-UvWx67Ivqe0-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -408,7 +408,7 @@ body {
     width: 15vmax;
     /* background-color: red; */
     border-radius: 50%;
-    background-image: url(/images/tim-chow-pa_McjjynOA-unsplash.jpg);
+    background-image: url(tim-chow-pa_McjjynOA-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -573,25 +573,25 @@ body {
 }
 
 .left_box1_image {
-    background-image: url(/images/Callanetics.jpg);
+    background-image: url(Callanetics.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .left_box2_image {
-    background-image: url(/images/Sport\ Dances.jpg);
+    background-image: url(Sport\ Dances.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .left_box3_image {
-    background-image: url(/images/Cardio\ Boxing.jpg);
+    background-image: url(Cardio\ Boxing.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .left_box4_image {
-    background-image: url(/images/Press\ &\ Back.jpg);
+    background-image: url(Press\ &\ Back.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -626,7 +626,7 @@ body {
 }
 
 .right_box1_image {
-    background-image: url(/images/yoga.jpg);
+    background-image: url(yoga.jpg);
     background-position: center;
     background-size: cover;
     transition: 0.5s ease-in-out all;
@@ -634,19 +634,19 @@ body {
 }
 
 .right_box2_image {
-    background-image: url(/images/Lifting.jpg);
+    background-image: url(Lifting.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .right_box3_image {
-    background-image: url(/images/Cardio.jpg);
+    background-image: url(Cardio.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .right_box4_image {
-    background-image: url(/images/Body\ Building.jpg);
+    background-image: url(Body\ Building.jpg);
     background-position: center;
     background-size: cover;
 }
